@@ -1,53 +1,47 @@
-# 🧠 Deep Temporal Transformer for Alzheimer’s Disease Detection
+🧠 Deep Temporal Transformer for Alzheimer’s Disease Detection
 
-> AI-powered early Alzheimer’s detection using MRI scans, Temporal Transformers, and Deep Learning.
+AI-powered Alzheimer’s detection using MRI temporal progression modeling, Transformers, and Deep Learning.
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-DeepLearning-red)
-![Transformers](https://img.shields.io/badge/Transformer-Architecture-purple)
-![Medical AI](https://img.shields.io/badge/Domain-MedicalAI-green)
-![Status](https://img.shields.io/badge/Status-ResearchProject-orange)
+⸻
 
----
+🚀 Overview
 
-## 🚀 Overview
+This project proposes a Deep Temporal Transformer (DTT) architecture for automated Alzheimer’s Disease detection using MRI scan progression data.
 
-This project proposes a **Deep Temporal Transformer (DTT)** architecture for automated Alzheimer’s Disease detection using MRI scans.
+Unlike traditional CNN-based approaches that process MRI images independently, this system models MRI data as a temporal sequence across timestamps, enabling the network to capture long-range progression patterns and contextual dependencies throughout the brain structure.
 
-Unlike traditional methods that analyze MRI slices independently, this system treats the entire MRI scan as a **patient-level temporal sequence**, enabling the model to learn long-range anatomical dependencies across brain slices.
+The framework combines:
 
-The architecture combines:
+* 🧠 ResNet34 for spatial feature extraction
+* 🔄 Transformer Encoder for temporal progression learning
+* 🐻 Brown Bear Optimization (BBO) for feature-dimension tuning
+* ⚡ PyTorch for scalable deep learning implementation
 
-- 🧠 **ResNet34** for spatial feature extraction
-- 🔄 **Transformer Encoder** for temporal MRI sequence learning
-- 🐻 **Brown Bear Optimization (BBO)** for feature-dimension tuning
-- ⚡ **PyTorch** for high-performance deep learning implementation
+The proposed architecture achieved an F1-score of 0.82 on binary dementia classification.
 
-The proposed framework achieved an **F1-score of 0.82** on binary dementia classification.
+⸻
 
----
+🔬 Research Motivation
 
-# 🔬 Research Motivation
+Most conventional Alzheimer’s detection systems:
 
-Traditional machine learning approaches for Alzheimer’s detection often:
-- depend heavily on handcrafted features
-- process MRI slices independently
-- lose inter-slice contextual information
+* rely heavily on handcrafted features
+* process MRI scans independently
+* fail to capture temporal progression relationships
 
-This project addresses those limitations by introducing a **Deep Temporal Transformer** that captures both:
-- spatial features within slices
-- temporal relationships across slices
+This project addresses these limitations through a Deep Temporal Transformer that learns:
 
-This creates a more biologically meaningful understanding of brain degeneration patterns.
+* spatial representations within MRI scans
+* temporal dependencies across timestamps
+* progression-aware disease patterns
 
----
+This enables a more clinically meaningful representation of neurodegenerative progression.
 
-# 🏗️ Architecture
+⸻
 
-## Pipeline
+🏗️ Architecture Pipeline
 
-```text
-MRI Scan Sequence
+MRI Temporal Sequence
         ↓
 ResNet34 Spatial Encoder
         ↓
@@ -59,6 +53,90 @@ Classification Head
         ↓
 Demented / Non-Demented
 
-dataset link :-
+⸻
+
+🧠 Key Features
+
+✅ Temporal progression modeling
+✅ Transformer-based attention learning
+✅ ResNet34 spatial encoding
+✅ Brown Bear Optimization (BBO)
+✅ Patient-level sequence learning
+✅ Reduced data leakage with stratified validation
+✅ Research-oriented Medical AI implementation
+
+⸻
+
+📊 Results
+
+Metric	Score
+F1 Macro	0.82
+Task	Binary Dementia Classification
+Framework	PyTorch
+Optimizer	Adam
+Validation	Patient-Level Stratified K-Fold
+
+⸻
+
+🛠️ Tech Stack
+
+* Python
+* PyTorch
+* Transformers
+* ResNet34
+* NumPy
+* Scikit-learn
+* Matplotlib
+* Google Colab
+
+⸻
+
+📚 Dataset
+
+Dataset used:
 
 https://www.kaggle.com/datasets/marcopinamonti/alzheimer-mri-4-classes-dataset
+
+⸻
+
+⚙️ How To Run
+
+Clone Repository
+
+git clone https://github.com/Aestheticfrog/deep-temporal-transformer-alzheimers.git
+
+Install Dependencies
+
+pip install -r requirements.txt
+
+Run Training
+
+python train.py
+
+⸻
+
+📄 Research Paper
+
+Research paper included in repository.
+
+⸻
+
+🎯 Future Improvements
+
+* Multi-class dementia stage classification
+* Vision Transformers (ViT)
+* Explainable AI integration
+* 3D temporal MRI modeling
+* Clinical deployment pipeline
+
+⭐ Why This Project Matters
+
+This project demonstrates:
+
+* Deep Learning expertise
+* Transformer architecture understanding
+* Temporal sequence modeling
+* Medical imaging knowledge
+* Research-oriented engineering
+* Optimization algorithm implementation
+* Real-world AI application develop
